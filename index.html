@@ -1,56 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>TOVO</title>
 
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-    rel="stylesheet">
-    <link rel='shortcut icon' type='image/x-icon' href ='//logo.clearbit.com/highradius.com'/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel='shortcut icon' type='image/x-icon' href='//logo.clearbit.com/highradius.com' />
 
     <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/sipml@2.1.4/SIPml-api.js'></script>
     <style>
-        
+        div::-webkit-scrollbar {
+            width: 6px;
+            background-color: #F5F5F5;
+        }
+
+
+        div::-webkit-scrollbar-track {
+            -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+            background-color: #F5F5F5;
+        }
+
+
+        div::-webkit-scrollbar-thumb {
+            background-color: #000000;
+        }
+
+
+        /* ::-webkit-scrollbar-thumb:hover {
+            background: #7FDBFF;
+        } */
 
         body {
-        	background-color: #333333 ;
-            font-family : "Roboto";
+            background-color: #333333;
+            font-family: "Roboto";
             font-size: "1vh";
             line-height: "1em";
         }
+
         .material-icons {
-  font-family: 'Material Icons';
-  font-weight: normal;
-  font-style: normal;
-  font-size: 24px;  /* Preferred icon size */
-  display: inline-block;
-  line-height: 1;
-  text-transform: none;
-  letter-spacing: normal;
-  word-wrap: normal;
-  white-space: nowrap;
-  direction: ltr;
+            font-family: 'Material Icons';
+            font-weight: normal;
+            font-style: normal;
+            font-size: 24px;
+            /* Preferred icon size */
+            display: inline-block;
+            line-height: 1;
+            text-transform: none;
+            letter-spacing: normal;
+            word-wrap: normal;
+            white-space: nowrap;
+            direction: ltr;
 
-  /* Support for all WebKit browsers. */
-  -webkit-font-smoothing: antialiased;
-  /* Support for Safari and Chrome. */
-  text-rendering: optimizeLegibility;
+            /* Support for all WebKit browsers. */
+            -webkit-font-smoothing: antialiased;
+            /* Support for Safari and Chrome. */
+            text-rendering: optimizeLegibility;
 
-  /* Support for Firefox. */
-  -moz-osx-font-smoothing: grayscale;
+            /* Support for Firefox. */
+            -moz-osx-font-smoothing: grayscale;
 
-  /* Support for IE. */
-  font-feature-settings: 'liga';
-}
+            /* Support for IE. */
+            font-feature-settings: 'liga';
+        }
     </style>
 </head>
+
 <body class="body">
-	 <audio id="audio_remote" autoplay="autoplay"></audio>
+    <audio id="audio_remote" autoplay="autoplay"></audio>
 
     <div id="root"></div>
 
     <!-- credits -->
-    
+
 <script type="text/javascript" src="/bundle.js"></script></body>
+
 </html>
